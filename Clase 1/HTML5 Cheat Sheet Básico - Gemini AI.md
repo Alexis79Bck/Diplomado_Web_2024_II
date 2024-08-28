@@ -1,7 +1,7 @@
 # Cheat Sheet de HTML5
 ## Estructura Básica
 - `<!DOCTYPE html>`: Declara el tipo de documento HTML5.
--  `<html>`: Raíz de todo documento HTML.
+- `<html>`: Raíz de todo documento HTML.
 - `<head>`: Contiene metadatos sobre el documento (título, codificación, enlaces a hojas de estilo, etc.).
 - `<title>`: Define el título de la página, que aparece en la pestaña del navegador.
 - `<body>`: Contiene el contenido visible de la página.
