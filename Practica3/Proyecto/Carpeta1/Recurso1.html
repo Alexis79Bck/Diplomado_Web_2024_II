@@ -1,31 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Practica CSS | Flexgrid y Media Queries</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 3 - Recurso1.html</title>
-</head>
+    <!-- Archivo de Estilos -->
+    <link rel="stylesheet" type="text/css" href="../estilos.css" />
+  </head>
 
-<body>
-    <nav>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="../index.html#seccion3">Contenido Sección 3</a></li>
+          <li><a href="../index.html#seccion4">Contenido Sección 4</a></li>
+          <li><a href="../index.html#seccion5">Contenido Sección 5</a></li>
+          <li><a href="../index.html#seccion6">Contenido Sección 6</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <a href="../index.html">Index</a>
-        <a href="Recurso1.html">Recurso1</a>
-        <a href="Carpeta1_A/Recurso1_A.html">Recurso1_A</a>
-        <a href="../Carpeta2/Recurso2.html">Recurso2</a>
-        <a href="../Carpeta2/Carpeta2_A/Recurso2_A.html">Recurso2_A</a>
-        <a href="../Carpeta3/Recurso3.html">Recurso3</a>
-        <a href="../Carpeta3/Carpeta3_A/Recurso3_A.html">Recurso3_A</a>
+    <main>
+      <h2>GALERÍA DE IMAGENES</h2>
+      <div class="galeria">
+        <div class="categoria">
+          <h2>Frutas</h2>
+          <img src="../imagenes/frutas/1.png" alt="Fruta 1" />
+          <img src="../imagenes/frutas/2.png" alt="Fruta 2" />
+          <img src="../imagenes/frutas/3.png" alt="Fruta 3" />
+          <img src="../imagenes/frutas/4.png" alt="Fruta 4" />
+          <img src="../imagenes/frutas/5.png" alt="Fruta 5" />
+        </div>
 
-    </nav>
-    <div>
-        <p>Carpeta1 /</p>
-    </div>
-    <br>
-    <div>
-        <h2>Me encuentro en Recurso1.html</h2>
-    </div>
-</body>
+        <div class="categoria">
+          <h2>Suites</h2>
+          <img src="../imagenes/habitacion/suite-1.jpg" alt="Suite 1" />
+          <img src="../imagenes/habitacion/suite-2.jpg" alt="Suite 2" />
+          <img src="../imagenes/habitacion/suite-3.jpg" alt="Suite 3" />
+          <img src="../imagenes/habitacion/suite-4.jpg" alt="Suite 4" />
+          <img src="../imagenes/habitacion/suite-5.jpg" alt="Suite 5" /> 
+        </div>
 
+        <div class="categoria">
+          <h2>Masajes</h2>
+          <img src="../imagenes/masajes/masaje-1.jpeg" alt="Masaje 1" />
+          <img src="../imagenes/masajes/masaje-2.jpg" alt="Masaje 2" />
+          <img src="../imagenes/masajes/masajes-3.jpg" alt="Masaje 3" />
+          <img src="../imagenes/masajes/masajes-4.jpg" alt="Masaje 4" />
+          <img src="../imagenes/masajes/masajes-5.jpg" alt="Masaje 5" />
+        </div>
+
+        <div class="categoria">
+          <h2>Cosas</h2>
+          <img src="../imagenes/1.jpg" alt="Cosas 1" />
+          <img src="../imagenes/2.jpg" alt="Cosas 2" />
+          <img src="../imagenes/3.jpg" alt="Cosas 3" />
+          <img src="../imagenes/4.jpg" alt="Cosas 4" />
+          <img src="../imagenes/5.jpg" alt="Cosas 5" />
+          
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
