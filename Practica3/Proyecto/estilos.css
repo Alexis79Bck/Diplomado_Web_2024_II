@@ -67,7 +67,7 @@ nav ul > li > a:hover {
 .categoria h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.75rem;
-  text-decoration: double;
+  text-decoration: underline double #3c3c3c;
   text-align: center;
   background-color: #9ac9ff;
   border: 2px solid #3c3c3c;
@@ -80,6 +80,31 @@ nav ul > li > a:hover {
 .categoria img {
   width: 20%; /* Ancho inicial de las imágenes */
   margin: 8px;
+}
+
+.form-servicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-servicio .form-titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: underline double #3c3c3c;
+  text-align: center;
+  background-color: #ffe79a;
+  border: 2px solid #3c3c3c;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 18px;
+  margin-bottom: 10px;
+}
+
+.form-custom-container {
+  display: flex;
+  align-self: center;
+  margin: auto;
+  width: 75%;
 }
 
 /* Media queries para ajustar el número de columnas */
