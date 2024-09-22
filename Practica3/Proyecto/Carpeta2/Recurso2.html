@@ -1,33 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Practica CSS | Flexgrid y Media Queries</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 3 - Recurso2.html</title>
-</head>
+    <!-- Archivo de Estilos -->
+    <link rel="stylesheet" type="text/css" href="../estilos.css" />
 
-<body>
-    <nav>
+    <!-- Bootstrap estilos-->
+    <link href="../bootstrap5.3/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
 
-        <a href="../index.html">Index</a>
-        <a href="../Carpeta1/Recurso1.html">Recurso1</a>
-        <a href="../Carpeta1/Carpeta1_A/Recurso1_A.html">Recurso1_A</a>
-        <a href="Recurso2.html">Recurso2</a>
-        <a href="Carpeta2_A/Recurso2_A.html">Recurso2_A</a>
-        <a href="../Carpeta3/Recurso3.html">Recurso3</a>
-        <a href="../Carpeta3/Carpeta3_A/Recurso3_A.html">Recurso3_A</a>
-        
-    </nav>
-    <div>
-        <p>Carpeta2 /</p>
-    </div>
-    <br>
-    <div>
-        <h2>Me encuentro en Recurso2.html</h2>
-    </div>
-    <br>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="../Carpeta1/Recurso1.html">Galeria</a></li>
+          <li><a href="#">Formulario</a></li>
+          <li><a href="../index.html#seccion4">Contenido Sección 4</a></li>
+          <li><a href="../index.html#seccion5">Contenido Sección 5</a></li>
+          <li><a href="../index.html#seccion6">Contenido Sección 6</a></li>
+        </ul>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <div class="form-servicio">
+        <h2 class="form-titulo">REGISTRO DE SERVICIO</h2>
+        <form
+          action="#"
+          class="form-custom-container row g-3 needs-validation"
+          novalidate
+        >
+          <div class="accordion" id="form-acordeon">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#infoBasica"
+                  aria-expanded="false"
+                  aria-controls="infoBasica"
+                >
+                  Información Básica
+                </button>
+              </h2>
+              <div
+                id="infoBasica"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#form-acordeon"
+              >
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 form-floating">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="nombre"
+                        placeholder="Escriba el Nombre"
+                        required
+                      />
+                      <label for="nombre">Nombre</label>
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                    </div>
+                    <div class="col-sm col-md-6 col-lg-4 form-floating">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        id="descripcion"
+                        placeholder="Escriba la Descripción"
+                        required
+                      />
+                      <label for="descripcion">Descripción</label>
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                    </div>
+                    <div class="col-sm col-md-6 col-lg-4 form-floating">
+                      <select
+                        class="form-select form-select-sm"
+                        id="duracion"
+                        required
+                      >
+                        <option selected>-- Seleccione --</option>
+                        <option value="1">30 Minutos</option>
+                        <option value="2">45 Minutos</option>
+                        <option value="3">60 Minutos</option>
+                      </select>
+                      <label for="duracion">Duración</label>
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#infoEspecialista"
+                  aria-expanded="false"
+                  aria-controls="infoEspecialista"
+                >
+                  Información Especialista
+                </button>
+              </h2>
+              <div
+                id="infoEspecialista"
+                class="accordion-collapse collapse"
+                data-bs-parent="#form-acordeon"
+              >
+                <div class="accordion-body">
+                  <div class="accordion-body">
+                    <div class="row g-3">
+                      <div class="col-sm col-md-6 col-lg-4 form-floating">
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          id="especialista"
+                          placeholder="Escriba el especialista"
+                          required
+                        />
+                        <label for="especialista">Especialista</label>
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio.
+                        </div>
+                      </div>
 
+                      <div class="col-sm col-md-6 col-lg-4 form-floating">
+                        <select
+                          class="form-select form-select-sm"
+                          id="diaDisponible"
+                          required
+                        >
+                          <option selected>-- Seleccione --</option>
+                          <option value="1">Lunes</option>
+                          <option value="2">Martes</option>
+                          <option value="3">Miércoles</option>
+                          <option value="4">Jueves</option>
+                          <option value="5">Viernes</option>
+                          <option value="6">Sábado</option>
+                        </select>
+                        <label for="diaDisponible">Día Disponible</label>
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio.
+                        </div>
+                      </div>
+
+                      <div class="col-sm col-md-6 col-lg-4 form-floating">
+                        <select
+                          class="form-select form-select-sm"
+                          id="turno"
+                          required
+                        >
+                          <option selected>-- Seleccione --</option>
+                          <option value="1">Mañana</option>
+                          <option value="2">Tarde</option>
+                          <option value="3">Noche</option>
+                        </select>
+                        <label for="turno">Turno</label>
+                        <div class="invalid-feedback">
+                          Este campo es obligatorio.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#caractAdicional"
+                  aria-expanded="false"
+                  aria-controls="caractAdicional"
+                >
+                  Características Adicionales
+                </button>
+              </h2>
+              <div
+                id="caractAdicional"
+                class="accordion-collapse collapse"
+                data-bs-parent="#form-acordeon"
+              >
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col col-md-6 col-lg-6 form-floating">
+                      <select class="form-select form-select-sm" id="categoria">
+                        <option selected>-- Seleccione --</option>
+                        <option value="1">Masaje Relajante Express</option>
+                        <option value="2">Masaje Relajante Full</option>
+                        <option value="3">Masaje Terapéutico</option>
+                        <option value="4">Tratamiento Facial</option>
+                        <option value="5">
+                          Tratamiento Corporal con Arcilla
+                        </option>
+                        <option value="6">Hidroterapia</option>
+                        <option value="7">Terapia Anti-Estress</option>
+                      </select>
+                      <label for="categoria">Categoría</label>
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                    </div>
+
+                    <div class="col-sm col-md-6 col-lg-6 form-floating">
+                      <h5 class="text-center">Materiales e Implementos</h5>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="toallaPequeña"
+                            />
+                            <label class="form-check-label" for="toallaPequeña"
+                              >Toalla Pequeña</label
+                            >
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="toallaMediana"
+                            />
+                            <label class="form-check-label" for="toallaMediana"
+                              >Toalla Mediana</label
+                            >
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="toallaGrande"
+                            />
+                            <label class="form-check-label" for="toallaGrande"
+                              >Toalla Grande</label
+                            >
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="aceiteLavanda"
+                            />
+                            <label class="form-check-label" for="aceiteLavanda"
+                              >Aceite de Lavanda</label
+                            >
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="aceiteManzanilla"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="aceiteManzanilla"
+                              >Aceite de Manzanilla</label
+                            >
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="aceiteAloeVera"
+                            />
+                            <label class="form-check-label" for="aceiteAloeVera"
+                              >Aceite de AloeVera</label
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#galeriaImagenes"
+                  aria-expanded="false"
+                  aria-controls="galeriaImagenes"
+                >
+                  Galería de Imágenes
+                </button>
+              </h2>
+              <div
+                id="galeriaImagenes"
+                class="accordion-collapse collapse"
+                data-bs-parent="#form-acordeon"
+              >
+                <div class="accordion-body">
+                  <div class="row g-3 mb-3">
+                    <div class="col-sm col-md-6 col-lg-6 form-floating">
+                      <input
+                        type="file"
+                        class="form-control form-control-sm"
+                        id="imagenPrincipal"
+                        placeholder="Escriba el imagenPrincipal"
+                        required
+                      />
+                      <label for="imagenPrincipal" class="form-label"
+                        >Imagen Principal</label
+                      >
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                    </div>
+                    <div class="col-sm col-md-6 col-lg-6 mx-auto">
+                      <div class="card w-50 p-3 shadow-lg">
+                        <img
+                          src="../imagenes/masajes/masajes-3.jpg"
+                          class="card-img-top rounded-3"
+                          alt="Imagen Principal"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3 mb-3">
+                    <div class="col-sm col-md-6 col-lg-6 form-floating">
+                      <input
+                        class="form-control"
+                        type="file"
+                        id="imagenesSecundarias"
+                        multiple
+                      />
+                      <label for="imagenesSecundarias" class="form-label"
+                        >Imagen Secundarias</label
+                      >
+                    </div>
+                    <div class="col-sm col-md-6 col-lg-6 mx-auto">
+                      <div class="d-flex">
+                        <div class="card p-3 shadow-lg">
+                          <img
+                            src="../imagenes/masajes/masaje-1.jpeg"
+                            class="card-img-top rounded-3"
+                            alt="Imagen Secundaria"
+                          />
+                        </div>
+
+                        <div class="card p-3 shadow-lg">
+                          <img
+                            src="../imagenes/masajes/masaje-1.jpeg"
+                            class="card-img-top rounded-3"
+                            alt="Imagen Secundaria"
+                          />
+                        </div>
+
+                        <div class="card p-3 shadow-lg">
+                          <img
+                            src="../imagenes/masajes/masaje-1.jpeg"
+                            class="card-img-top rounded-3"
+                            alt="Imagen Secundaria"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="../bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
