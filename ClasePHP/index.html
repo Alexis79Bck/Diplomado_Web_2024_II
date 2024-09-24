@@ -129,6 +129,39 @@
           </p>
         </div>
       </div>
+
+      <div id="ejercicio5">
+        <h1 class="ejercicio-titulo">Ejercicio 5</h1>
+        <div>
+          <p>
+            Una compañía de seguros esta abriendo un departamento de finanzas y estableció un programa para
+            captar clientes, que consiste en lo siguiente Si el monto por el que se efectúa la fianza es menor que Bs
+            será el 2 del monto La afianzadora desea determinar cual será la cuota que debe pagar un cliente
+            50 000 la cuota a pagar será por el 3 del monto, y si el monto es mayor que Bs 50 000 la cuota a pagar
+          </p>
+          <p>
+            <div  class="frame">
+              <form action="Clase1/Ejercicios/CalculoFianzaAseguradora.php" method="post" class="formulario">
+                <div class="formulario-contenedor">
+                  <label class="formulario-label" for="nombreCliente">
+                    Nombre Completo del Cliente
+                  </label>
+                  <input class="formulario-input" type="text" name="nombreCliente" required/>
+                  <label class="formulario-label" for="edad">
+                    Monto de la Fianza
+                  </label>
+                  <input class="formulario-input" type="number" min="1" step="1" name="montoFianza" required/>
+                  
+                  <input class="formulario-boton-ejecutar" type="submit" value="Ejecutar" />
+                </div>
+              </form>
+            </div>
+          </p>
+        </div>
+      </div>
+
+
+
     </main>
   </body>
 </html>
