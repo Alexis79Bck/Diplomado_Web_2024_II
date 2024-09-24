@@ -16,7 +16,7 @@
     <main>
       <div>
         <h1 class="ejercicio-titulo">Ejercicio 1</h1>
-        <div>
+        <div id="ejercicio1">
           <p>
             En un supermercado se hace una promoción, mediante la cual el
             cliente obtiene un descuento dependiendo de un número que se escoge
@@ -26,12 +26,21 @@
             30 Obtener cuanto dinero se le descuenta
           </p>
           <p>
-            <a
-              href="Clase1/Ejercicios/DescuentoSupermercado.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Solución</a
-            >
+            <div  class="frame">
+              <form action="Clase1/Ejercicios/DescuentoSupermercado.php" method="post" class="formulario">
+                <div class="formulario-contenedor">
+                  <label class="formulario-label" for="montoDeCompra">
+                    Ingrese el monto de su Compra
+                  </label>
+                  <input class="formulario-input" type="number" min="1"  step="0.01" name="montoDeCompra" required/>
+                  <label class="formulario-label" for="numero">
+                    Ingrese Un Número entre 1 y 100
+                  </label>
+                  <input class="formulario-input" type="number" min="1" max="100" step="1" name="numero" required/>
+                  <input class="formulario-boton-ejecutar" type="submit" value="Ejecutar" />
+                </div>
+              </form>
+            </div>
           </p>
         </div>
       </div>
@@ -46,17 +55,26 @@
             descuento del 10
           </p>
           <p>
-            <a
-              href="Clase1/Ejercicios/TotalAPagarCompraDeCamisas.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Solución</a
-            >
+            <div  class="frame">
+              <form action="Clase1/Ejercicios/TotalAPagarCompraDeCamisas.php" method="post" class="formulario">
+                <div class="formulario-contenedor">
+                  <label class="formulario-label" for="montoDeCompra">
+                    Ingrese el monto de su Compra
+                  </label>
+                  <input class="formulario-input" type="number" min="1"  step="0.01" name="montoDeCompra" required/>
+                  <label class="formulario-label" for="cantidad">
+                    Ingrese Cantidad de Camisas Comprada
+                  </label>
+                  <input class="formulario-input" type="number" min="1" step="1" name="cantidad" required/>
+                  <input class="formulario-boton-ejecutar" type="submit" value="Ejecutar" />
+                </div>
+              </form>
+            </div>
           </p>
         </div>
       </div>
 
-      <div>
+      <div id="ejercicio3">
         <h1 class="ejercicio-titulo">Ejercicio 3</h1>
         <div>
           <p>
@@ -65,17 +83,22 @@
             y de Bs 700 si se compran 5 o más
           </p>
           <p>
-            <a
-              href="Clase1/Ejercicios/CompraDeCauchos.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Solución</a
-            >
+            <div  class="frame">
+              <form action="Clase1/Ejercicios/CompraDeCauchos.php" method="post" class="formulario">
+                <div class="formulario-contenedor">
+                  <label class="formulario-label" for="cantidad">
+                    Ingrese la cantidad de Cauchos
+                  </label>
+                  <input class="formulario-input" type="number" min="1"  step="1" name="cantidad" required/>
+                  <input class="formulario-boton-ejecutar" type="submit" value="Ejecutar" />
+                </div>
+              </form>
+            </div>
           </p>
         </div>
       </div>
 
-      <div>
+      <div id="ejercicio4">
         <h1 class="ejercicio-titulo">Ejercicio 4</h1>
         <div>
           <p>
@@ -85,12 +108,24 @@
             el sexo es masculino es: número de pulsaciones = (210 - edad) / 20
           </p>
           <p>
-            <a
-              href="Clase1/Ejercicios/CalculoPulsacionesPorSexo.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Solución</a
-            >
+            <div  class="frame">
+              <form action="Clase1/Ejercicios/CalculoPulsacionesPorSexo.php" method="post" class="formulario">
+                <div class="formulario-contenedor">
+                  <label class="formulario-label" for="edad">
+                    Ingrese la edad
+                  </label>
+                  <input class="formulario-input" type="number" min="1" max="100"  step="1" name="edad" required/>
+                  <label class="formulario-label" for="sexo">
+                    Seleccione el Sexo
+                  </label>
+                  <select name="sexo" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                  </select>
+                  <input class="formulario-boton-ejecutar" type="submit" value="Ejecutar" />
+                </div>
+              </form>
+            </div>
           </p>
         </div>
       </div>
