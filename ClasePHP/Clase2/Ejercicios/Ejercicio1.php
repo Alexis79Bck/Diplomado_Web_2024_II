@@ -17,11 +17,11 @@
         }
     }
 
+    echo "La cantidad  de números entre 1 y 20 fue: $rango1 <br />";
+    echo "La cantidad  de números entre 21 y 70 fue: $rango2 <br />";
+    echo "La cantidad  de números entre 71 y 100 fue: $rango3 <br />";
     echo "<br />";
     echo '<a href="../index.html#ejercicio1"> Regresar </a>';
     echo "<br />";
     echo "<br />";
-    echo "La cantidad  de números entre 1 y 20 fue: $rango1 <br />";
-    echo "La cantidad  de números entre 21 y 70 fue: $rango2 <br />";
-    echo "La cantidad  de números entre 71 y 100 fue: $rango3 <br />";
 
